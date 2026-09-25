@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 1. Core Hub Pages -->
+  <url><loc>https://tedorihub.com/</loc><priority>1.00</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html</loc><priority>0.95</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html</loc><priority>0.95</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html</loc><priority>0.90</priority></url>
+
+  <!-- 2. Bonus Mode (手取り 計算 ボーナス 専用URL) -->
+  <url><loc>https://tedorihub.com/tedori.html?mode=bonus</loc><priority>0.90</priority></url>
+
+  <!-- 3. Programmatic Zangyo Base Salaries (基本給別 Google PAA 専用URL) -->
+  <url><loc>https://tedorihub.com/zangyo.html?base=200000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?base=220000</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?base=250000</loc><priority>0.95</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?base=280000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?base=320000</loc><priority>0.85</priority></url>
+
+  <!-- 4. Programmatic Kabe (時給別 年収の壁 - 23 URLs) -->
+  <url><loc>https://tedorihub.com/kabe.html?wage=960</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=980</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1030</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1050</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1080</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1100</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1120</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1150</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1180</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1200</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1250</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1300</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1350</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1400</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1450</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1500</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1600</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1700</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=1800</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=2000</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=2200</loc><priority>0.70</priority></url>
+  <url><loc>https://tedorihub.com/kabe.html?wage=2500</loc><priority>0.70</priority></url>
+
+  <!-- 5. Programmatic Tedori (月給別 手取り計算 - 27 URLs) -->
+  <url><loc>https://tedorihub.com/tedori.html?salary=150000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=160000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=170000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=180000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=190000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=200000</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=210000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=220000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=230000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=240000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=250000</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=260000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=280000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=300000</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=320000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=350000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=380000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=400000</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=450000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=500000</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=550000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=600000</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=650000</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=700000</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=800000</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=900000</loc><priority>0.70</priority></url>
+  <url><loc>https://tedorihub.com/tedori.html?salary=1000000</loc><priority>0.75</priority></url>
+
+  <!-- 6. Programmatic Zangyo Hours (残業時間別 - 18 URLs) -->
+  <url><loc>https://tedorihub.com/zangyo.html?ot=10</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=15</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=20</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=25</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=30</loc><priority>0.90</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=35</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=40</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=45</loc><priority>0.95</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=50</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=55</loc><priority>0.80</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=60</loc><priority>0.95</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=65</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=70</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=75</loc><priority>0.75</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=80</loc><priority>0.85</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=85</loc><priority>0.70</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=90</loc><priority>0.70</priority></url>
+  <url><loc>https://tedorihub.com/zangyo.html?ot=100</loc><priority>0.75</priority></url>
+
+  <!-- 7. Legal & Compliance Pages -->
+  <url><loc>https://tedorihub.com/privacy.html</loc><priority>0.30</priority></url>
+  <url><loc>https://tedorihub.com/terms.html</loc><priority>0.30</priority></url>
+  <url><loc>https://tedorihub.com/contact.html</loc><priority>0.30</priority></url>
+</urlset>

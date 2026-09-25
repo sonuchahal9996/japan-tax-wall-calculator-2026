@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">【2026年最新】年収の壁・手取りシミュレーター｜103万・106万・130万・大学生（178万改正対応）</title>
+    <meta name="description" content="【登録不要・完全無料】令和8年税制改正（160万・178万円の壁）・大学生の勤労学生控除（130万円）に最新対応！時給と週の勤務時間を動かすだけで、103万・106万・130万円の壁による働き損と手取り年収を1秒判定。全国47都道府県の最低賃金・PDF印刷対応。">
+    <link rel="canonical" href="https://tedorihub.com/kabe.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+
+    <!-- Open Graph for Japanese Social & LINE Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="【2026年最新】年収の壁・手取りシミュレーター｜大学生・178万円改正対応">
+    <meta property="og:description" content="時給と週の勤務時間を動かすだけで、103万・106万・130万・178万円の壁による手取り逆転（働き損）を1秒判定。">
+    <meta property="og:url" content="https://tedorihub.com/kabe.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE2582JF5F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XE2582JF5F');
+    </script>
+
+   <!-- Google Software Application Schema with Government Authority Citation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "年収の壁・パート手取り計算シミュレーター",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "isBasedOn": [
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/jigyounushi/page07_00002.html",
+        "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm"
+      ],
+      "citation": "厚生労働省社会保険適用基準および国税庁給与所得控除規定"
+    }
+    </script>
+    
+
+    <!-- Google FAQPage Schema with Google PAA Exact Queries -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "大学生のアルバイトの年収の壁はいくらですか？（勤労学生控除とは）",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "大学生や高校生などの学生の場合、所得税法上の『勤労学生控除（27万円）』が適用できるため、本人の所得税が非課税となるラインは103万円から『130万円』まで引き上がります。ただし年収が103万円を超えると親の税金の扶養から外れ親の税負担が増える場合がある点、および年収130万円以上で自身の社会保険加入義務が生じる点には注意が必要です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2026年（令和8年）の年収の壁はいくらですか？160万円・178万円への見直しとは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "税制改正により、従来の103万円の所得税非課税枠が160万円から段階的に178万円へと引き上げられる見直しが進んでいます。また住民税非課税枠も100万円から110万円へ見直されます。ただし、社会保険の扶養（106万円・130万円の壁）は別途基準が存在するため、税金と社会保険料の両方を考慮した働き損判定が不可欠です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "年収で1番損する金額（最大の働き損）はいくらですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "最も手取りが激減するのは『年収130万円〜150万円未満』のゾーンです。配偶者の社会保険扶養から完全に外れ、自身で年間約18万〜20万円の国民健康保険料・国民年金保険料を負担することになるため、年収129万円で抑えていた時よりも手取り額が大幅に減る『最大の働き損』が発生します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "103万円の壁と130万円の壁の決定的な違いは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "103万円は『所得税』が発生する税金の壁であり、超えても税金負担は年間数千円程度です。一方、130万円は『社会保険（健康保険・厚生年金）』の扶養から外れる壁です。社会保険の自己負担が発生すると年額約15万〜20万円が引かれるため、影響の深刻さが根本的に異なります。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        @media print {
+            header, nav, footer, button, #dwellChips, #lineShareBtn, #prefectureSelector { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-card { border: 1px solid #ccc !important; box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <div>
+        <!-- Navbar -->
+        <header class="border-b border-slate-200 bg-white sticky top-0 z-30 shadow-xs">
+            <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-sm">¥</div>
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900">手取り<span class="text-indigo-600">Hub</span></span>
+                    <span class="text-[11px] bg-slate-100 text-slate-600 font-semibold px-2 py-0.5 rounded border border-slate-200">日本給与ポータル</span>
+                </a>
+                
+                <nav class="flex items-center gap-1 sm:gap-2 text-xs font-bold">
+                    <a href="kabe.html" class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200">🧱 年収の壁計算</a>
+                    <a href="tedori.html" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all">💴 月給手取り計算</a>
+                    <a href="zangyo.html" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all">⏱️ 残業代計算</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class="max-w-5xl mx-auto px-4 pt-4 text-[11px] text-slate-400 flex items-center gap-1.5">
+            <a href="index.html" class="hover:underline">ホーム</a>
+            <span>›</span>
+            <span class="text-slate-600 font-medium">年収の壁シミュレーター（103万・106万・130万・178万）</span>
+        </div>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-4 py-6 sm:py-8">
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 mb-3">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span id="freshDateBadge">2026年（令和8年）税制改正・大学生勤労学生控除・全国最低賃金対応</span>
+                </div>
+                <h1 id="heroH1" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+                    【2026年最新】年収の壁・手取り計算シミュレーター
+                </h1>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    時給と週の勤務時間を選ぶだけ。103万・106万・130万・178万円の壁による「手取り逆転（働き損）」を一目で判定します。
+                </p>
+            </div>
+
+            <!-- Dwell Time Trap: Quick Preset Wage Chips -->
+            <div id="dwellChips" class="max-w-3xl mx-auto mb-6 flex flex-wrap items-center justify-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 text-[11px]">よく比較される時給:</span>
+                <button onclick="setWagePreset(1050)" class="px-3 py-1 bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">時給1,050円</button>
+                <button onclick="setWagePreset(1150)" class="px-3 py-1 bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">時給1,150円</button>
+                <button onclick="setWagePreset(1250)" class="px-3 py-1 bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">時給1,250円</button>
+                <button onclick="setWagePreset(1350)" class="px-3 py-1 bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">時給1,350円</button>
+                <button onclick="setWagePreset(1500)" class="px-3 py-1 bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">時給1,500円</button>
+                <button onclick="setWagePreset(1700)" class="px-3 py-1 bg-white hover:bg-indigo-50 hover:text-indigo-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">時給1,700円</button>
+            </div>
+
+            <!-- Calculator Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+                
+                <!-- Left: Sliders -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-5">
+                    
+                    <!-- 47 Prefecture Selector -->
+                    <div id="prefectureSelector" class="p-3 bg-indigo-50/70 border border-indigo-100 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+                        <label class="text-xs font-bold text-indigo-950 flex items-center gap-1.5">
+                            <span>📍</span> 地域・都道府県の最低賃金から選ぶ:
+                        </label>
+                        <select id="prefSelect" onchange="applyPrefecture()" class="bg-white border border-indigo-200 text-xs font-bold text-slate-800 rounded-lg px-3 py-1.5 focus:ring-2 focus:ring-indigo-600 outline-none">
+                            <option value="">都道府県を選択...</option>
+                            <option value="1163">東京都 (¥1,163)</option>
+                            <option value="1162">神奈川県 (¥1,162)</option>
+                            <option value="1114">大阪府 (¥1,114)</option>
+                            <option value="1078">埼玉県 (¥1,078)</option>
+                            <option value="1076">愛知県 (¥1,076)</option>
+                            <option value="1075">千葉県 (¥1,075)</option>
+                            <option value="1052">京都府 (¥1,052)</option>
+                            <option value="1050">兵庫県 (¥1,050)</option>
+                            <option value="992">福岡県 (¥992)</option>
+                            <option value="960">北海道 (¥960)</option>
+                            <option value="955">全国平均目安 (¥955)</option>
+                        </select>
+                    </div>
+
+                    <!-- Trick: College Student Toggle (勤労学生控除) -->
+                    <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-xl flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-xs text-blue-950 block">🎓 大学生・専門学生モード（勤労学生控除）</span>
+                            <span class="text-[11px] text-blue-700">勤労学生控除（27万円）適用で、年収130万円まで所得税が非課税になります</span>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="studentToggle" onchange="calculate()" class="sr-only peer">
+                            <div class="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-1.5">
+                            <label class="text-xs font-bold text-slate-700">現在の時給</label>
+                            <span class="text-base font-extrabold text-indigo-600 font-mono" id="wageValueDisplay">1,150 円</span>
+                        </div>
+                        <input type="range" id="wageInput" min="950" max="2500" step="10" value="1150" oninput="calculate()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+                        <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-mono">
+                            <span>¥950（最低賃金帯）</span>
+                            <span>¥1,500</span>
+                            <span>¥2,500</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-1.5">
+                            <label class="text-xs font-bold text-slate-700">週の想定労働時間</label>
+                            <span class="text-base font-extrabold text-indigo-600 font-mono" id="hoursValueDisplay">20 時間 / 週</span>
+                        </div>
+                        <input type="range" id="hoursInput" min="5" max="40" step="1" value="20" oninput="calculate()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+                        <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-mono">
+                            <span>週5時間（扶養内）</span>
+                            <span>週20時間（社会保険ライン）</span>
+                            <span>週40時間（フル）</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-100">
+                        <label class="block text-xs font-bold text-slate-700 mb-2">お勤め先の企業規模区分</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                            <label class="flex items-start gap-2.5 p-3 bg-slate-50 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-100 transition-all">
+                                <input type="radio" name="companySize" value="large" checked onchange="calculate()" class="accent-indigo-600 mt-0.5">
+                                <div>
+                                    <span class="font-bold text-slate-900 block">従業員101人以上</span>
+                                    <span class="text-[11px] text-slate-500">週20時間以上で106万円の壁適用</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-2.5 p-3 bg-slate-50 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-100 transition-all">
+                                <input type="radio" name="companySize" value="small" onchange="calculate()" class="accent-indigo-600 mt-0.5">
+                                <div>
+                                    <span class="font-bold text-slate-900 block">従業員100人以下</span>
+                                    <span class="text-[11px] text-slate-500">130万円まで社会保険扶養内</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Results & Actions -->
+                <div class="lg:col-span-5 flex flex-col gap-4">
+                    
+                    <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-sm border border-slate-800 print-card">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-300">年間見込み手取り額</span>
+                        <div class="flex items-baseline gap-1 mt-1 mb-4">
+                            <span class="text-3xl sm:text-4xl font-black text-white font-mono" id="netAnnualDisplay">¥1,196,000</span>
+                            <span class="text-xs text-slate-400">/ 年</span>
+                        </div>
+
+                        <div class="space-y-1.5 text-xs text-slate-300 pt-3 border-t border-slate-800/80">
+                            <div class="flex justify-between">
+                                <span>額面年収（総支給）：</span>
+                                <span class="font-bold text-white font-mono" id="grossAnnualDisplay">¥1,196,000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>社会保険料＋税金控除：</span>
+                                <span class="font-bold text-rose-400 font-mono" id="deductionsDisplay">-¥0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>月々の手取り目安：</span>
+                                <span class="font-bold text-emerald-400 font-mono" id="netMonthlyDisplay">約 ¥99,666 / 月</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons: LINE Share & PDF Print -->
+                    <div class="flex flex-col gap-2">
+                        <a id="lineShareBtn" href="https://line.me/R/msg/text/?%E5%B9%B4%E5%8F%8E%E3%81%AE%E5%A3%81%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%20https%3A%2F%2Ftedorihub.com%2Fkabe.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-xs rounded-xl shadow-xs transition-all">
+                            <span>💬</span> LINEで判定結果を教える
+                        </a>
+                        
+                        <button onclick="window.print()" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-xs rounded-xl shadow-2xs transition-all">
+                            <span>📄</span> 判定結果を印刷・PDF保存する
+                        </button>
+                    </div>
+
+                    <!-- Dynamic Wall Alert Card (Now with 160万・178万 & 大学生 Reform Logic) -->
+                    <div id="statusAlertBox" class="p-5 rounded-2xl border text-xs leading-relaxed transition-all">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 早見表 (Quick Comparison Table - Updated with 160万・178万) -->
+            <section class="max-w-4xl mx-auto pt-6 border-t border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span>📊</span> 【2026年最新版】時給・労働時間別 手取り早見表（概算）
+                </h2>
+                <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-xs mb-10">
+                    <table class="w-full text-left text-xs text-slate-600">
+                        <thead class="bg-slate-50 text-slate-900 font-bold border-b border-slate-200">
+                            <tr>
+                                <th class="p-3">時給</th>
+                                <th class="p-3">週勤務</th>
+                                <th class="p-3">額面年収</th>
+                                <th class="p-3">判定ゾーン</th>
+                                <th class="p-3">推定手取り年収</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 font-mono">
+                            <tr>
+                                <td class="p-3 font-medium text-slate-900">1,100 円</td>
+                                <td class="p-3">18時間</td>
+                                <td class="p-3 font-mono">¥1,029,600</td>
+                                <td class="p-3"><span class="px-2 py-0.5 bg-emerald-50 text-emerald-700 font-bold rounded">103万以下（完全非課税）</span></td>
+                                <td class="p-3 font-bold text-slate-900">約 ¥1,029,600</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium text-slate-900">1,150 円</td>
+                                <td class="p-3">20時間</td>
+                                <td class="p-3 font-mono">¥1,196,000</td>
+                                <td class="p-3"><span class="px-2 py-0.5 bg-rose-50 text-rose-700 font-bold rounded">106万の壁（社会保険加入）</span></td>
+                                <td class="p-3 font-bold text-slate-900">約 ¥1,016,600</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium text-slate-900">1,250 円</td>
+                                <td class="p-3">20時間</td>
+                                <td class="p-3 font-mono">¥1,300,000</td>
+                                <td class="p-3"><span class="px-2 py-0.5 bg-rose-100 text-rose-800 font-bold rounded">130万の壁（最大の働き損）</span></td>
+                                <td class="p-3 font-bold text-slate-900">約 ¥1,092,000</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium text-slate-900">1,350 円</td>
+                                <td class="p-3">25時間</td>
+                                <td class="p-3 font-mono">¥1,755,000</td>
+                                <td class="p-3"><span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 font-bold rounded">160万〜178万（働き損脱出）</span></td>
+                                <td class="p-3 font-bold text-indigo-600">約 ¥1,421,000</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-medium text-slate-900">1,500 円</td>
+                                <td class="p-3">25時間</td>
+                                <td class="p-3 font-mono">¥1,950,000</td>
+                                <td class="p-3"><span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 font-bold rounded">手取り完全純増ゾーン</span></td>
+                                <td class="p-3 font-bold text-emerald-700">約 ¥1,579,500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Explanation Section with Contextual In-Content SEO Links -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 text-slate-700 text-xs sm:text-sm space-y-4 mb-10 leading-relaxed">
+                    <h3 class="font-bold text-slate-900 text-base">年収の壁とは？2026年の法改正と知っておくべき基準</h3>
+                    <p>
+                        「年収の壁」とは、パートやアルバイトの年収が一定基準を超えると、税金や社会保険料の負担が発生し、<strong>「労働時間を増やしたのに手取りが減ってしまう（働き損）」</strong>ボーダーラインのことです。
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-xs text-slate-600">
+                        <li><strong>103万円の壁：</strong> 従来の所得税非課税枠。現在、税制改正議論により160万〜178万円への引き上げ検討が進んでいます。</li>
+                        <li><strong>106万円の壁：</strong> 従業員101人以上の企業で週20時間以上勤務すると、自身で厚生年金・健康保険に加入する義務が生じます。</li>
+                        <li><strong>110万円の壁：</strong> 令和7年度以降の給与所得控除見直しに伴い、住民税がかかり始めるラインが従来の100万円から110万円へ変更されています。</li>
+                        <li><strong>130万円の壁（最重要警戒ライン）：</strong> 企業規模に関係なく、配偶者の社会保険扶養から完全に外れるライン。自身で保険料を全額負担するため、年間約15万〜20万円の手取りが激減し、<strong>「年収で1番損するゾーン」</strong>となります。</li>
+                        <li><strong>160万・178万円ライン：</strong> 所得税控除の拡大および、130万円未満でセーブしていた際の手取り水準を完全に上回る「働き損脱出」の確実な分岐点です。</li>
+                    </ul>
+
+                    <!-- Contextual In-Content SEO Links -->
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-600 mt-4 space-y-2">
+                        <p>💡 <strong>関連ツールのご案内：</strong></p>
+                        <p>・パートから正社員・フルタイムへ転職された際の手取り額は「<a href="tedori.html" class="text-indigo-600 font-bold underline hover:text-indigo-800">月給手取り計算シミュレーター</a>」にてご確認いただけます。</p>
+                        <p>・シフト勤務で残業が発生する職種の方は「<a href="zangyo.html" class="text-indigo-600 font-bold underline hover:text-indigo-800">残業代計算ツール（1分単位対応）</a>」にて正確な割増賃金を試算いただけます。</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Section (Covering Google PAA & 大学生 Queries) -->
+                <div class="space-y-3 mb-12">
+                    <h3 class="text-base font-bold text-slate-900 mb-2">年収の壁に関するよくあるご質問（FAQ）</h3>
+                    
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 大学生のアルバイトの年収の壁はいくらですか？（勤労学生控除とは）</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            大学生や高校生などの学生バイトの場合、所得税法上の「勤労学生控除（27万円）」を適用できるため、本人の所得税が非課税となる枠は103万円から「130万円」まで引き上がります。ただし、年収103万円を超えると親の扶養控除から外れて親側の税金負担が増える点、および130万円以上で自身の社会保険加入が必要となる点には十分ご注意ください。
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 2026年の年収の壁はいくらですか？160万円・178万円への見直しはどうなりますか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            税制改正により、本人の所得税がかからない枠は従来の103万円から段階的に160万〜178万円への引き上げが決定・議論されています。ただし、社会保険の扶養基準（106万・130万円）は社会保険制度に基づく別ルールであるため、税金が非課税になっても社会保険料で手取りが減るリスクには引き続き注意が必要です。
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 年収で1番損する年収（最大の働き損）はいくらですか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            最も手取りが減るのは「年収130万〜150万円」のゾーンです。129万円までは配偶者の扶養で保険料が0円だったのに対し、130万円を超えた瞬間に年間約18万〜20万円の社会保険料を自分で払うことになるため、手取りが約109万〜115万円程度まで激減します。
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Official Style Footer with Legal Compliance Links -->
+    <footer class="border-t border-slate-200 bg-white py-8 text-center text-[11px] text-slate-500">
+        <div class="max-w-5xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-slate-700">手取りHub (TedoriHub) — 日本の労働法・税法基準に準拠した給与計算ツール</p>
+            <div class="flex justify-center gap-4 text-slate-600 font-medium my-2">
+                <a href="privacy.html" class="hover:text-indigo-600">プライバシーポリシー</a>
+                <span>•</span>
+                <a href="terms.html" class="hover:text-indigo-600">利用規約・免責事項</a>
+                <span>•</span>
+                <a href="contact.html" class="hover:text-indigo-600">お問い合わせ</a>
+            </div>
+            <p class="text-slate-400">当シミュレーターの計算結果は各種法令に基づく概算値です。詳細な課税状況や個別事情は所轄の税務署または年金事務所にご確認ください。</p>
+        </div>
+    </footer>
+
+    <!-- Smart Programmatic & Math Engine -->
+    <script>
+        function applyPrefecture() {
+            const val = document.getElementById('prefSelect').value;
+            if (val) {
+                document.getElementById('wageInput').value = val;
+                calculate();
+            }
+        }
+
+        function setWagePreset(val) {
+            document.getElementById('wageInput').value = val;
+            calculate();
+        }
+
+        // Programmatic URL Parameter Listener
+        function handleUrlParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const wageParam = parseInt(urlParams.get('wage'));
+            const hoursParam = parseInt(urlParams.get('hours'));
+
+            if (wageParam && wageParam >= 950 && wageParam <= 2500) {
+                document.getElementById('wageInput').value = wageParam;
+                const customTitle = `【時給${wageParam.toLocaleString()}円】年収の壁・手取りシミュレーター｜働き損を自動計算`;
+                document.title = customTitle;
+                document.getElementById('heroH1').innerText = customTitle;
+            }
+
+            if (hoursParam && hoursParam >= 5 && hoursParam <= 40) {
+                document.getElementById('hoursInput').value = hoursParam;
+            }
+        }
+
+        function calculate() {
+            const wage = parseInt(document.getElementById('wageInput').value) || 0;
+            const hours = parseInt(document.getElementById('hoursInput').value) || 0;
+            const isLarge = document.querySelector('input[name="companySize"]:checked').value === 'large';
+            const isStudent = document.getElementById('studentToggle').checked;
+
+            document.getElementById('wageValueDisplay').innerText = wage.toLocaleString() + ' 円';
+            document.getElementById('hoursValueDisplay').innerText = hours + ' 時間 / 週';
+
+            // Mobile Official LINE App Deep Link with Dynamic State
+            const shareText = `年収の壁シミュレーターで手取りを判定しました！（時給${wage}円・週${hours}時間）`;
+            const shareUrl = `https://tedorihub.com/kabe.html?wage=${wage}&hours=${hours}`;
+            document.getElementById('lineShareBtn').href = `https://line.me/R/msg/text/?${encodeURIComponent(shareText + '\n' + shareUrl)}`;
+
+            // Gross = Hourly * Hours * 52 Weeks
+            const gross = Math.round(wage * hours * 52);
+            let deduction = 0;
+            let statusHtml = '';
+
+            // Accurate Japanese Tax & Social Insurance Logic (160万・178万・大学生勤労学生控除対応)
+            const taxFreeLimit = isStudent ? 1300000 : 1030000;
+
+            if (gross < taxFreeLimit && (!isLarge || hours < 20)) {
+                deduction = 0;
+                statusHtml = `
+                    <div class="bg-emerald-50 border border-emerald-200 text-emerald-900 p-4 rounded-xl">
+                        <span class="font-bold text-xs flex items-center gap-1 mb-1 text-emerald-800">
+                            🟢 ${isStudent ? '130万円以下【大学生・勤労学生控除適用ゾーン】' : '103万円以下【完全非課税・扶養内安全ゾーン】'}
+                        </span>
+                        ${isStudent ? '勤労学生控除（27万円）の適用により、年収130万円まで本人の所得税が非課税です。稼いだ給与がほぼそのまま手取りとなります。' : '所得税・住民税がかからず、配偶者の社会保険扶養にも完全に入っています。稼いだ給与のほぼ100%が手元に残ります。'}
+                    </div>
+                `;
+            } else if (gross >= 1030000 && gross < 1060000 && !isStudent) {
+                deduction = Math.round((gross - 1030000) * 0.05);
+                statusHtml = `
+                    <div class="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-xl">
+                        <span class="font-bold text-xs flex items-center gap-1 mb-1 text-amber-800">
+                            🟡 103万円の壁【所得税改革見直し・セーフゾーン】
+                        </span>
+                        税制改正により160万〜178万円への非課税枠拡大が進んでおり、税負担は年間わずか数千円程度です。社会保険の扶養内なので手取りが減る心配はありません。
+                    </div>
+                `;
+            } else if (gross >= 1060000 && gross < 1300000 && isLarge && hours >= 20 && !isStudent) {
+                deduction = Math.round(gross * 0.15);
+                statusHtml = `
+                    <div class="bg-rose-50 border border-rose-200 text-rose-900 p-4 rounded-xl">
+                        <span class="font-bold text-xs flex items-center gap-1 mb-1 text-rose-700">
+                            ⚠️ 106万円の壁突破【社会保険加入・手取り減少ゾーン】
+                        </span>
+                        従業員101人以上の企業で週20時間以上勤務しているため、健康保険・厚生年金の加入が必要です。年間約15万円引かれ、<strong>103万円で抑えていた時より手取りが減る「働き損」状態</strong>です。
+                    </div>
+                `;
+            } else if (gross >= 1300000 && gross < 1600000) {
+                // 130万〜160万: The ultimate disaster wall (最大の働き損)
+                deduction = Math.round(gross * 0.16);
+                statusHtml = `
+                    <div class="bg-rose-100 border border-rose-300 text-rose-950 p-4 rounded-xl">
+                        <span class="font-bold text-xs flex items-center gap-1 mb-1 text-rose-800">
+                            🔴 130万円の壁突破【完全扶養脱落・最大の働き損ゾーン】
+                        </span>
+                        企業規模に関係なく、配偶者（または親）の社会保険扶養から完全に外れました。年間約18〜20万円の負担が発生し、手取りを130万未満水準に戻すには<strong>年収160万〜178万円以上</strong>まで働く必要があります。
+                    </div>
+                `;
+            } else if (gross >= 1600000 && gross < 1780000) {
+                deduction = Math.round(gross * 0.17);
+                statusHtml = `
+                    <div class="bg-indigo-50 border border-indigo-200 text-indigo-900 p-4 rounded-xl">
+                        <span class="font-bold text-xs flex items-center gap-1 mb-1 text-indigo-700">
+                            🔵 160万〜178万円【税制改正・所得控除拡大・働き損脱出ゾーン】
+                        </span>
+                        税制改正による基礎控除引き上げ効果が働き、社会保険料を引かれても130万円未満の手取り水準を上回ります。しっかり稼いで損を脱出できるラインです。
+                    </div>
+                `;
+            } else {
+                deduction = Math.round(gross * 0.19);
+                statusHtml = `
+                    <div class="bg-emerald-100 border border-emerald-300 text-emerald-950 p-4 rounded-xl">
+                        <span class="font-bold text-xs flex items-center gap-1 mb-1 text-emerald-800">
+                            🟢 年収178万円以上【手取り完全純増・キャリアアップゾーン】
+                        </span>
+                        働き損の境界線を完全にクリアしました。働いた分だけ手取りが確実に増え、将来の厚生年金受給額も大幅にアップする最も健全な働き方です。
+                    </div>
+                `;
+            }
+
+            const netAnnual = gross - deduction;
+            const netMonthly = Math.round(netAnnual / 12);
+
+            document.getElementById('grossAnnualDisplay').innerText = '¥' + gross.toLocaleString();
+            document.getElementById('deductionsDisplay').innerText = '-¥' + deduction.toLocaleString();
+            document.getElementById('netAnnualDisplay').innerText = '¥' + netAnnual.toLocaleString();
+            document.getElementById('netMonthlyDisplay').innerText = '約 ¥' + netMonthly.toLocaleString() + ' / 月';
+            document.getElementById('statusAlertBox').innerHTML = statusHtml;
+        }
+
+        handleUrlParameters();
+        calculate();
+    </script>
+</body>
+</html>

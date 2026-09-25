@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">【2026年最新】残業代計算ツール（月給・基本給別）｜1分単位・割増賃金を自動計算</title>
+    <meta name="description" content="【登録不要・完全無料】基本給（22万・25万・28万円等）と残業時間を入力するだけで、労働基準法第37条に基づく残業代（時間外1.25倍・月60時間超1.5倍・深夜割増）と基礎時給を1秒で自動計算。未払い残業代の確認・1分単位計算・PDF印刷対応。">
+    <link rel="canonical" href="https://tedorihub.com/zangyo.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph for Japanese Social & LINE Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="【2026年最新】残業代計算ツール（月給制）｜1分単位・法定割増賃金を自動計算">
+    <meta property="og:description" content="基本給と残業時間を入力するだけで、労働基準法に基づく残業手当（1.25倍・1.5倍・深夜割増）を1秒自動計算。">
+    <meta property="og:url" content="https://tedorihub.com/zangyo.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE2582JF5F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XE2582JF5F');
+    </script>
+
+    <!-- Google Software Application Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "残業代計算ツール・割増賃金シミュレーター",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
+
+    <!-- Google FAQPage Schema with Real PAA Search Queries -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "基本給25万円の正社員の残業代（1時間あたり）はいくらですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "月の所定労働時間を160時間と仮定した場合、基礎時給は『25万円 ÷ 160時間 ＝ 1,563円』となります。法定時間外労働（割増率1.25倍）の残業代は1時間あたり約1,953円となります。深夜残業（22時以降・1.50倍）の場合は1時間あたり約2,344円となります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "残業代は1分単位で計算しなければ違法ですか？（日々の切り捨て禁止）",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、労働基準法第24条および第37条により、労働時間は原則として『1分単位』で計算することが義務付けられています。日々の残業時間を15分や30分単位で切り捨てる処理は労働基準法違反（未払い残業代）となります（※1か月単位の端数処理においてのみ30分未満切り捨て・以上切り上げが例外的に認められています）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "基本給22万円の場合、残業代の時給単価はいくらになりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "月の所定労働時間160時間の場合、基礎時給は『22万円 ÷ 160時間 ＝ 1,375円』です。これに1.25倍を乗じた1時間あたりの残業手当は約1,719円（深夜残業時は約2,063円）となります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "残業代の計算の基礎となる時給（基礎時給）から除外できる手当は何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通勤手当、家族手当、別居手当、子女教育手当、住宅手当、臨時に支払われた賃金、賞与の7項目のみ除外が法律で認められています。役職手当や資格手当、職務手当などは除外できず、基礎時給の算定に含める必要があります。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        @media print {
+            header, nav, footer, button, #dwellChips, #lineShareBtn, #otPresetChips { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-card { border: 1px solid #ccc !important; box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <div>
+        <!-- Navbar -->
+        <header class="border-b border-slate-200 bg-white sticky top-0 z-30 shadow-xs">
+            <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-sm">¥</div>
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900">手取り<span class="text-indigo-600">Hub</span></span>
+                    <span class="text-[11px] bg-slate-100 text-slate-600 font-semibold px-2 py-0.5 rounded border border-slate-200">日本給与ポータル</span>
+                </a>
+                
+                <nav class="flex items-center gap-1 sm:gap-2 text-xs font-bold">
+                    <a href="kabe.html" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all">🧱 年収の壁計算</a>
+                    <a href="tedori.html" class="px-3 py-1.5 rounded-lg text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all">💴 月給手取り計算</a>
+                    <a href="zangyo.html" class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200">⏱️ 残業代計算</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Breadcrumbs -->
+        <div class="max-w-5xl mx-auto px-4 pt-4 text-[11px] text-slate-400 flex items-center gap-1.5">
+            <a href="index.html" class="hover:underline">ホーム</a>
+            <span>›</span>
+            <span class="text-slate-600 font-medium">残業代計算ツール（月給・基本給別）</span>
+        </div>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-4 py-6 sm:py-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200 mb-3">
+                    <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                    <span>労働基準法第37条・1分単位計算・月60時間超割増（1.50倍）完全準拠</span>
+                </div>
+                <h1 id="heroH1" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+                    【2026年最新】残業代計算ツール（月給・基本給別）
+                </h1>
+                <p class="text-slate-600 text-xs sm:text-sm">
+                    基本給と残業時間を入力するだけで、法律に基づく正確な残業手当と基礎時給を1秒で即時計算します。
+                </p>
+            </div>
+
+            <!-- Dwell Time Trap: Quick Preset Salary Chips -->
+            <div id="dwellChips" class="max-w-3xl mx-auto mb-4 flex flex-wrap items-center justify-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 text-[11px]">よく比較される基本給:</span>
+                <button onclick="setBasePreset(200000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">基本給20万円</button>
+                <button onclick="setBasePreset(220000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">基本給22万円</button>
+                <button onclick="setBasePreset(250000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">基本給25万円</button>
+                <button onclick="setBasePreset(280000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">基本給28万円</button>
+                <button onclick="setBasePreset(320000)" class="px-3 py-1 bg-white hover:bg-rose-50 hover:text-rose-600 border border-slate-200 rounded-full font-medium transition-all shadow-2xs">基本給32万円</button>
+            </div>
+
+            <!-- Overtime Hour Chips -->
+            <div id="otPresetChips" class="max-w-3xl mx-auto mb-6 flex flex-wrap items-center justify-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 text-[11px]">残業時間目安:</span>
+                <button onclick="setOtPreset(20)" class="px-2.5 py-0.5 bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition-all">20時間</button>
+                <button onclick="setOtPreset(30)" class="px-2.5 py-0.5 bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition-all">30時間</button>
+                <button onclick="setOtPreset(45)" class="px-2.5 py-0.5 bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition-all">45時間（36協定上限）</button>
+                <button onclick="setOtPreset(60)" class="px-2.5 py-0.5 bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition-all">60時間（1.5倍）</button>
+            </div>
+
+            <!-- Calculator Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+                
+                <!-- Inputs (7 Cols) -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-5">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5">基準となる月給（基本給＋役職手当等）</label>
+                            <div class="relative">
+                                <span class="absolute left-3.5 top-2.5 text-slate-400 font-bold">¥</span>
+                                <input type="number" id="baseSalaryInput" value="250000" step="5000" oninput="calculate()" class="w-full pl-8 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 focus:bg-white focus:ring-2 focus:ring-indigo-600 text-sm font-mono">
+                            </div>
+                            <span class="text-[10px] text-slate-400 mt-1 block">※通勤手当・家族手当・住宅手当は除外</span>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5">月平均所定労働時間（目安: 160h）</label>
+                            <div class="relative">
+                                <input type="number" id="workHoursInput" value="160" step="1" oninput="calculate()" class="w-full pl-4 pr-8 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 focus:bg-white focus:ring-2 focus:ring-indigo-600 text-sm font-mono">
+                                <span class="absolute right-3.5 top-2.5 text-slate-400 font-bold text-xs">時間</span>
+                            </div>
+                            <span class="text-[10px] text-slate-400 mt-1 block">年間所定労働日数×所定時間÷12</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-100 space-y-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-xs text-slate-900">当月の残業・時間外労働の実績</h3>
+                            <span class="text-[10px] bg-emerald-50 text-emerald-700 font-bold px-2 py-0.5 rounded border border-emerald-200">1分単位計算対応</span>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <label class="font-medium text-slate-700">通常残業（月60時間以内の時間外・1.25倍）</label>
+                                <span class="font-mono font-bold text-indigo-600" id="normalOtDisplay">25 時間</span>
+                            </div>
+                            <input type="range" id="normalOtInput" min="0" max="60" value="25" oninput="calculate()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <label class="font-medium text-slate-700">長時間の時間外残業（月60時間超の部分・1.50倍）</label>
+                                <span class="font-mono font-bold text-rose-600" id="over60OtDisplay">0 時間</span>
+                            </div>
+                            <input type="range" id="over60OtInput" min="0" max="40" value="0" oninput="calculate()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-rose-600">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-700 mb-1">深夜残業（22時〜翌5時・+0.25倍）</label>
+                                <div class="relative">
+                                    <input type="number" id="nightHoursInput" value="5" min="0" step="1" oninput="calculate()" class="w-full pl-3 pr-8 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs font-mono">
+                                    <span class="absolute right-3 top-2 text-slate-400 text-xs">時間</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-700 mb-1">法定休日出勤（1.35倍）</label>
+                                <div class="relative">
+                                    <input type="number" id="holidayHoursInput" value="0" min="0" step="1" oninput="calculate()" class="w-full pl-3 pr-8 py-2 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 text-xs font-mono">
+                                    <span class="absolute right-3 top-2 text-slate-400 text-xs">時間</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Outputs, LINE Deep Link & PDF Print (5 Cols) -->
+                <div class="lg:col-span-5 flex flex-col gap-4">
+                    
+                    <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-sm border border-slate-800 print-card">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-rose-400">当月の残業手当 支給目安額</span>
+                        <div class="flex items-baseline gap-1 mt-1 mb-3">
+                            <span class="text-3xl sm:text-4xl font-black text-white font-mono" id="totalOtPayDisplay">¥50,781</span>
+                        </div>
+
+                        <div class="space-y-1.5 text-xs text-slate-300 pt-3 border-t border-slate-800">
+                            <div class="flex justify-between">
+                                <span>基礎時給（時給換算単価）：</span>
+                                <span class="font-bold text-white font-mono" id="baseHourlyRateDisplay">¥1,563 / 時</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>1時間あたりの残業単価（1.25倍）：</span>
+                                <span class="font-bold text-indigo-300 font-mono" id="otRate125Display">約 ¥1,953 / 時</span>
+                            </div>
+                            <div class="flex justify-between pt-1 border-t border-slate-800">
+                                <span>残業代を含む総支給額（額面）：</span>
+                                <span class="font-bold text-emerald-400 font-mono" id="grossTotalSalaryDisplay">約 ¥300,781</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-col gap-2">
+                        <a id="lineShareBtn" href="https://line.me/R/msg/text/?%E6%AE%8B%E6%A5%AD%E4%BB%A3%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%20https%3A%2F%2Ftedorihub.com%2Fzangyo.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-xs rounded-xl shadow-xs transition-all">
+                            <span>💬</span> LINEで残業代の計算結果を同僚に教える
+                        </a>
+
+                        <button onclick="window.print()" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-xs rounded-xl shadow-2xs transition-all">
+                            <span>📄</span> 残業代試算シートを印刷・PDF保存
+                        </button>
+                    </div>
+
+                    <!-- Breakdown Detail -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2 text-xs">
+                        <h3 class="font-bold text-slate-900 pb-2 border-b border-slate-100">残業手当の内訳</h3>
+                        <div class="flex justify-between text-slate-600">
+                            <span>通常残業手当（1.25倍）：</span>
+                            <span class="font-mono font-bold text-slate-800" id="normalOtAmount">¥48,828</span>
+                        </div>
+                        <div class="flex justify-between text-slate-600">
+                            <span>月60時間超手当（1.50倍）：</span>
+                            <span class="font-mono font-bold text-slate-800" id="over60OtAmount">¥0</span>
+                        </div>
+                        <div class="flex justify-between text-slate-600">
+                            <span>深夜割増手当（+0.25倍）：</span>
+                            <span class="font-mono font-bold text-slate-800" id="nightAmount">¥1,953</span>
+                        </div>
+                        <div class="flex justify-between text-slate-600">
+                            <span>休日労働手当（1.35倍）：</span>
+                            <span class="font-mono font-bold text-slate-800" id="holidayAmount">¥0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 早見表 (Quick Comparison Table) -->
+            <section class="max-w-4xl mx-auto pt-6 border-t border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span>📊</span> 基本給・残業時間別 残業手当早見表（所定労働160h・1分単位準拠）
+                </h2>
+                <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-xs mb-10">
+                    <table class="w-full text-left text-xs text-slate-600">
+                        <thead class="bg-slate-50 text-slate-900 font-bold border-b border-slate-200">
+                            <tr>
+                                <th class="p-3">基本給</th>
+                                <th class="p-3">基礎時給</th>
+                                <th class="p-3">残業20時間</th>
+                                <th class="p-3">残業40時間</th>
+                                <th class="p-3">残業60時間</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 font-mono">
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900">¥200,000</td>
+                                <td class="p-3">¥1,250 /h</td>
+                                <td class="p-3 font-bold text-slate-900">¥31,250</td>
+                                <td class="p-3 font-bold text-slate-900">¥62,500</td>
+                                <td class="p-3 font-bold text-rose-600">¥93,750</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900">¥220,000</td>
+                                <td class="p-3">¥1,375 /h</td>
+                                <td class="p-3 font-bold text-slate-900">¥34,375</td>
+                                <td class="p-3 font-bold text-slate-900">¥68,750</td>
+                                <td class="p-3 font-bold text-rose-600">¥103,125</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900">¥250,000</td>
+                                <td class="p-3">¥1,563 /h</td>
+                                <td class="p-3 font-bold text-slate-900">¥39,063</td>
+                                <td class="p-3 font-bold text-slate-900">¥78,125</td>
+                                <td class="p-3 font-bold text-rose-600">¥117,188</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900">¥280,000</td>
+                                <td class="p-3">¥1,750 /h</td>
+                                <td class="p-3 font-bold text-slate-900">¥43,750</td>
+                                <td class="p-3 font-bold text-slate-900">¥87,500</td>
+                                <td class="p-3 font-bold text-rose-600">¥131,250</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-slate-900">¥320,000</td>
+                                <td class="p-3">¥2,000 /h</td>
+                                <td class="p-3 font-bold text-slate-900">¥50,000</td>
+                                <td class="p-3 font-bold text-slate-900">¥100,000</td>
+                                <td class="p-3 font-bold text-rose-600">¥150,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- FAQ Section (Covering Google PAA Queries) -->
+                <div class="space-y-3 mb-12">
+                    <h3 class="text-base font-bold text-slate-900 mb-2">残業代に関するよくあるご質問（FAQ）</h3>
+                    
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 基本給25万円の正社員の残業代（時給単価）はいくらですか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            月所定労働時間を160時間とした場合、基礎時給は「250,000円 ÷ 160時間 ＝ 1,563円」です。法定時間外労働（1.25倍）の残業単価は1時間あたり約1,953円となります。月に30時間残業した場合、残業手当は約58,594円が月給に上乗せ支給されます。
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 残業時間は1分単位で計算しなければ違法ですか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            はい、労働基準法に基づき日々の労働時間は「1分単位」で把握・計算することが義務付けられています。タイムカード等で日々の残業時間を15分や30分単位で切り捨てる運用は違法（未払い残業代の発生）となります。
+                        </p>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-xs mb-1">Q. 固定残業代（みなし残業）を超えた分は請求できますか？</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            はい、当然に請求可能です。例えば「月30時間分」の固定残業代があらかじめ給与に含まれている契約でも、実際の残業が30時間を超えた場合は、会社はその超過時間分の割増賃金を別途全額支給する法律上の義務があります。
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Official Style Footer with Legal Compliance Links -->
+    <footer class="border-t border-slate-200 bg-white py-8 text-center text-[11px] text-slate-500">
+        <div class="max-w-5xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-slate-700">手取りHub (TedoriHub) — 労働基準法に準拠した割増賃金計算ツール</p>
+            <div class="flex justify-center gap-4 text-slate-600 font-medium my-2">
+                <a href="privacy.html" class="hover:text-indigo-600">プライバシーポリシー</a>
+                <span>•</span>
+                <a href="terms.html" class="hover:text-indigo-600">利用規約・免責事項</a>
+                <span>•</span>
+                <a href="contact.html" class="hover:text-indigo-600">お問い合わせ</a>
+            </div>
+            <p class="text-slate-400">※当計算結果は労働基準法に基づく一般的な計算例です。裁量労働制や変形労働時間制などの適用がある場合は計算が異なります。</p>
+        </div>
+    </footer>
+
+    <!-- Smart Programmatic & Math Engine -->
+    <script>
+        function setBasePreset(val) {
+            document.getElementById('baseSalaryInput').value = val;
+            calculate();
+        }
+
+        function setOtPreset(val) {
+            document.getElementById('normalOtInput').value = Math.min(val, 60);
+            if (val > 60) {
+                document.getElementById('over60OtInput').value = val - 60;
+            } else {
+                document.getElementById('over60OtInput').value = 0;
+            }
+            calculate();
+        }
+
+        // Programmatic URL Parameter Listener
+        function handleUrlParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const otParam = parseInt(urlParams.get('ot'));
+            const baseParam = parseInt(urlParams.get('base'));
+
+            if (baseParam && baseParam >= 100000 && baseParam <= 1500000) {
+                document.getElementById('baseSalaryInput').value = baseParam;
+            }
+
+            if (otParam && otParam > 0 && otParam <= 100) {
+                setOtPreset(otParam);
+                
+                let customTitle = `【残業${otParam}時間】残業代計算ツール｜法定割増賃金の早見表`;
+                if (otParam === 45) {
+                    customTitle = `【残業45時間・36協定上限】残業代計算ツール｜支給額の目安`;
+                } else if (otParam >= 60) {
+                    customTitle = `【残業60時間超・1.5倍割増】残業代計算ツール｜支給額の目安`;
+                }
+                document.title = customTitle;
+                document.getElementById('heroH1').innerText = customTitle;
+            }
+        }
+
+        function calculate() {
+            const baseSalary = parseInt(document.getElementById('baseSalaryInput').value) || 0;
+            const workHours = parseInt(document.getElementById('workHoursInput').value) || 160;
+            const normalOt = parseInt(document.getElementById('normalOtInput').value) || 0;
+            const over60Ot = parseInt(document.getElementById('over60OtInput').value) || 0;
+            const nightHours = parseInt(document.getElementById('nightHoursInput').value) || 0;
+            const holidayHours = parseInt(document.getElementById('holidayHoursInput').value) || 0;
+
+            document.getElementById('normalOtDisplay').innerText = normalOt + ' 時間';
+            document.getElementById('over60OtDisplay').innerText = over60Ot + ' 時間';
+
+            // Mobile Official LINE App Deep Link with Dynamic State
+            const shareText = `残業代シミュレーターで法定割増賃金を計算しました！（残業${normalOt + over60Ot}時間・月給${baseSalary.toLocaleString()}円）`;
+            const shareUrl = `https://tedorihub.com/zangyo.html?ot=${normalOt + over60Ot}&base=${baseSalary}`;
+            document.getElementById('lineShareBtn').href = `https://line.me/R/msg/text/?${encodeURIComponent(shareText + '\n' + shareUrl)}`;
+
+            // 1. Base Hourly Rate (基礎時給 = 基本給 ÷ 所定労働時間)
+            const baseHourly = workHours > 0 ? (baseSalary / workHours) : 0;
+            const otHourly125 = baseHourly * 1.25;
+
+            // 2. Normal Overtime (1.25x)
+            const normalPay = Math.round(normalOt * baseHourly * 1.25);
+
+            // 3. Over 60h Overtime (1.50x)
+            const over60Pay = Math.round(over60Ot * baseHourly * 1.50);
+
+            // 4. Night Premium (+0.25x)
+            const nightPay = Math.round(nightHours * baseHourly * 0.25);
+
+            // 5. Statutory Holiday (1.35x)
+            const holidayPay = Math.round(holidayHours * baseHourly * 1.35);
+
+            // Total Overtime Pay
+            const totalOt = normalPay + over60Pay + nightPay + holidayPay;
+            const grossTotal = baseSalary + totalOt;
+
+            // Update UI
+            document.getElementById('baseHourlyRateDisplay').innerText = '¥' + Math.round(baseHourly).toLocaleString() + ' / 時';
+            document.getElementById('otRate125Display').innerText = '約 ¥' + Math.round(otHourly125).toLocaleString() + ' / 時';
+            document.getElementById('totalOtPayDisplay').innerText = '¥' + totalOt.toLocaleString();
+            document.getElementById('grossTotalSalaryDisplay').innerText = '約 ¥' + grossTotal.toLocaleString();
+
+            document.getElementById('normalOtAmount').innerText = '¥' + normalPay.toLocaleString();
+            document.getElementById('over60OtAmount').innerText = '¥' + over60Pay.toLocaleString();
+            document.getElementById('nightAmount').innerText = '¥' + nightPay.toLocaleString();
+            document.getElementById('holidayAmount').innerText = '¥' + holidayPay.toLocaleString();
+        }
+
+        handleUrlParameters();
+        calculate();
+    </script>
+</body>
+</html>
